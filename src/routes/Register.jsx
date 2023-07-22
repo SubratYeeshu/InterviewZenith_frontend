@@ -7,6 +7,7 @@ import { BASE_URL } from "../helper/ref.js";
 import { passwordStrength } from "check-password-strength";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import login_img from "../images/login_img.jpg";
 
 const Register = () => {
   const [fullName, setFullName] = useState("");
@@ -207,7 +208,7 @@ const Register = () => {
           </div>
           <div className="right">
             <img
-              src="https://www.oliviascuisine.com/wp-content/uploads/2019/01/double-chocolate-chili.jpg"
+              src={login_img}
               alt="img"
             />
           </div>
