@@ -118,20 +118,20 @@ const NewRecipe = (props) => {
           <div className="left">
             <div> Add your experience 🤵</div>
             <input
-              placeholder="Name of the recipe"
+              placeholder="Name of the company"
               value={recipeName}
               onChange={(e) => setRecipeName(e.target.value)}
               required
             />
             <textarea
-              placeholder="Ingradients"
+              placeholder="Personal details (College Tier / Offer : (Accepted / Rejected))"
               rows={6}
               value={recipeIngradients}
               onChange={(e) => setRecipeIngradients(e.target.value)}
               required
             ></textarea>
             <textarea
-              placeholder="Recipe description and how to make it"
+              placeholder="Details about the interview process"
               rows={10}
               value={recipeDescription}
               onChange={(e) => setRecipeDescription(e.target.value)}
@@ -151,7 +151,7 @@ const NewRecipe = (props) => {
                   ? "Image Uploaded!"
                   : imageUploading
                   ? "Uploading..."
-                  : "Add Recipe Image"}
+                  : "Add company logo image"}
               </div>
               <input type="file" name="file" onChange={handleFileInputChange} />
               <i>(upload .png, .jpg, .jpeg image)</i>
@@ -163,7 +163,7 @@ const NewRecipe = (props) => {
             </div>
             <p style={{ color: "white" }}>- OR -</p>
             <textarea
-              placeholder="Paste the Recipe Image URL"
+              placeholder="Paste the company Image URL"
               rows={1}
               value={recipeImageUrl}
               onChange={(e) => setRecipeImageUrl(e.target.value)}
